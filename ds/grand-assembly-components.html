@@ -1,0 +1,71 @@
+<!-- @dsCard group="Aurelia Atelier" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Aurelia Atelier — grand-assembly components</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ivory:#f6f1e7; --parchment:#efe7d6; --panel:rgba(250,246,238,.92); --panel-solid:#faf6ee;
+  --line-gold:rgba(176,141,62,.35); --ink:#1c1a17; --ink-soft:#5c554a;
+  --gold:#b08d3e; --gold-bright:#c9a961; --midnight:#1d3054; --oxblood:#6e1f26;
+  --radius:0; --shadow-panel:0 18px 50px -18px rgba(28,22,12,.28);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',sans-serif;
+}
+body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:300;padding:36px;display:grid;gap:28px;max-width:720px}
+.eyebrow{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+h1{font-family:var(--serif);font-weight:600;font-size:30px;letter-spacing:.08em}
+.swatches{display:flex;gap:10px}
+.swatches div{width:64px;height:64px;border:1px solid var(--line-gold);display:grid;place-items:end center;
+  font-size:8.5px;letter-spacing:.1em;padding-bottom:5px;color:var(--ink-soft);background:#fff}
+.card{width:280px;background:var(--panel);border:1px solid var(--line-gold);padding:24px;box-shadow:var(--shadow-panel)}
+.card h2{font-family:var(--serif);font-size:27px;font-weight:600;margin:4px 0 10px}
+.card p{font-size:12.5px;line-height:1.62;color:var(--ink-soft)}
+.craft{margin-top:14px;padding:11px 13px;border-left:2px solid var(--gold);background:rgba(176,141,62,.07);font-size:11.5px;color:var(--ink-soft)}
+.craft b{color:var(--gold);font-weight:500;letter-spacing:.18em;font-size:9.5px;display:block;margin-bottom:4px}
+.advance{margin-top:18px;width:100%;padding:13px 0;background:var(--ink);color:var(--ivory);border:0;
+  font-family:var(--sans);font-size:11px;letter-spacing:.3em;text-transform:uppercase;cursor:pointer}
+.advance:hover{background:var(--gold)}
+.runline{margin-top:9px;width:100%;padding:10px 0;background:none;color:var(--ink-soft);border:1px solid var(--line-gold);
+  font-family:var(--sans);font-size:10px;letter-spacing:.26em;text-transform:uppercase;cursor:pointer}
+.check{display:flex;align-items:center;gap:10px;padding:7px 0;font-size:12px;border-bottom:1px dashed var(--line-gold);color:var(--ink-soft);width:280px}
+.check .box{width:14px;height:14px;border:1px solid var(--gold);display:grid;place-items:center;font-size:9px;color:#fff}
+.check.ok{color:var(--ink)} .check.ok .box{background:var(--oxblood);border-color:var(--oxblood)}
+.stamp{display:inline-block;border:3px solid var(--oxblood);color:var(--oxblood);padding:10px 30px;font-family:var(--serif);
+  font-weight:700;font-size:30px;letter-spacing:.12em;text-transform:uppercase;transform:rotate(-7deg);background:rgba(246,241,231,.6)}
+.stamp small{display:block;font-family:var(--sans);font-weight:500;font-size:10px;letter-spacing:.34em;text-align:center}
+</style>
+</head>
+<body>
+  <div>
+    <div class="eyebrow">Aurelia Atelier · grand-assembly</div>
+    <h1>Ivory &amp; Gold — component sheet</h1>
+  </div>
+
+  <div class="swatches">
+    <div style="background:var(--ivory)">ivory</div>
+    <div style="background:var(--parchment)">parchment</div>
+    <div style="background:var(--gold);color:#fff">gold</div>
+    <div style="background:var(--midnight);color:#fff">midnight</div>
+    <div style="background:var(--oxblood);color:#fff">oxblood</div>
+    <div style="background:var(--ink);color:#fff">ink</div>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Stage 04 / 08</div>
+    <h2>The Marriage</h2>
+    <p>The painted shell — five coats of midnight lacquer — is lowered onto the rolling chassis.</p>
+    <div class="craft"><b>CRAFT NOTE</b>Body and chassis meet exactly once. The fit is measured in breaths, not millimetres.</div>
+    <button class="advance">Advance the Line</button>
+    <button class="runline">▸ Run the Full Line</button>
+  </div>
+
+  <div>
+    <div class="check ok"><span class="box">✓</span>Check 01 — Grille &amp; Mascot</div>
+    <div class="check"><span class="box">✓</span>Check 02 — Paint Depth</div>
+  </div>
+
+  <div class="stamp">Released<small>Commission Nº 001</small></div>
+</body>
+</html>

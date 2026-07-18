@@ -1,0 +1,38 @@
+/* Aurelia Coachworks — atelier theme tokens
+   Synced with the "Rohit Dev Tools UI" Claude Design project
+   (tokens/aurelia-tokens.css). Edit here, push via DesignSync. */
+:root {
+  /* surfaces */
+  --ivory: #f6f1e7;
+  --parchment: #efe7d6;
+  --panel: rgba(250, 246, 238, 0.92);
+  --panel-solid: #faf6ee;
+  --line-gold: rgba(176, 141, 62, 0.35);
+
+  /* text */
+  --ink: #1c1a17;
+  --ink-soft: #5c554a;
+
+  /* brand */
+  --gold: #b08d3e;
+  --gold-bright: #c9a961;
+  --midnight: #1d3054;
+  --oxblood: #6e1f26;
+
+  /* shape + depth — sharp corners are part of the atelier look */
+  --radius: 0;
+  --shadow-panel: 0 18px 50px -18px rgba(28, 22, 12, 0.28);
+
+  /* type scale */
+  --fs-2xs: 8.5px;
+  --fs-xs: 10px;
+  --fs-sm: 12.5px;
+  --fs-md: 14px;
+  --fs-lg: 17px;
+  --fs-xl: 27px;
+  --fs-display: clamp(38px, 6vw, 64px);
+
+  /* letterspacing — wide tracking carries the luxury voice */
+  --track-wide: 0.3em;
+  --track-wider: 0.44em;
+}
